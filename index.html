@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body >
+
+    <header id="main">
+        <a href="./"><i class="fa-solid fa-feather"></i></i></a>
+        <nav>
+            <a href="#">Docs</a>
+            <a href="#">API</a>
+            <a href="#">FAQ</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <div>
+                <a href="#" class="bars" onclick="openSideBar()"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <div class="sideBar" id="sideBar">
+            <nav>
+                <a href="#" class="x-mark" onclick="closeSideBar()"><i class="fa-solid fa-x"></i></a>
+                <a href="#">Docs</a>
+                <a href="#">API</a>
+                <a href="#">FAQ</a>
+                <a href="#">Services</a>
+                <a href="#">Pricing</a>
+            </nav>
+        </div>
+        
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="side">
+            <h1>Lightning AI, <br>
+                your 
+                <span class="think">Ideas</span>
+                into
+                <span class="make">Apps</span>
+                with a Single Command.
+            </h1>
+            <p>Build anything you want with the power of AI.</p>
+            <a href="#pricing" class="get-started">Get Started</a>
+        </div>
+    </main>
+
+    <section class="grids-section">
+        <div class="grids">
+            <div class="big">
+                <h3>Transfrom ideas to real Apps</h3>
+                <p>Lightning AI is the ultimate platform for turning your vision into reality—fast. With just a simple command, create fully functional Mobile, Desktop, and Web Apps powered by cutting-edge AI. No coding, no complexity—just your ideas, brought to life in seconds. Whether you're a developer, entrepreneur, or creative thinker, Lightning AI empowers you to build smarter, faster, and effortlessly. The future of app development is here, and it starts with your words.</p>
+            </div>
+            <div class="tall">
+                <h3>Integrated with Powerful AI Modules</h3>
+                <p>Lightning AI combines the best of AI modules, Including ChatGPT 4, Claude 3.7, DeepSeek R1, and more, to deliver unmatched intelligence and precision. These cutting-edge modules work seamlessly to turn your ideas into powerful apps, faster and smarter than ever. Build with the future of AI at your fingertips.</p>
+            </div>
+            <div class="green">
+                <h3>Easy way to make Apps</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta doloribus provident fugiat, modi animi alias cupiditate, labore aut dicta fuga nihil tenetur! Nam beatae ipsum, repellendus unde cumque dolores.</p>
+            </div>
+            <div>
+                <h3>Easy way to make Apps</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta doloribus provident fugiat, modi animi alias cupiditate, labore aut dicta fuga nihil tenetur! Nam beatae ipsum, repellendus unde cumque dolores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY LIGHTNING AI -->
+    <section class="why-lightning-ai">
+        <h2>Why lightning AI?</h2>
+        <p>Lightning AI is the ultimate platform for transforming your ideas into fully functional apps with unmatched speed and simplicity. Whether you're building Mobile, Desktop, or Web Apps, all it takes is a single command to bring your vision to life. Powered by the world’s most advanced AI modules, including ChatGPT 4, Claude 3.7, and DeepSeek R1, Lightning AI delivers the intelligence, precision, and creativity you need to create smarter and faster than ever before.
+            <br> <br>
+            Our free plan is designed to let you explore, experiment, and innovate without barriers, offering a taste of what’s possible. While it comes with limits, it’s the perfect starting point for developers, entrepreneurs, and creative thinkers to test ideas and build prototypes. When you’re ready to scale, our premium plans unlock unlimited potential, giving you the tools to take your projects to the next level.
+            <br> <br>
+            With Lightning AI, you’re not just building apps. You’re leveraging the future of AI to create solutions that are intuitive, powerful, and tailored to your needs. From concept to creation, Lightning AI is here to make app development faster, smarter, and more accessible than ever. Start small, dream big, and let Lightning AI power your journey.</p>
+
+            <h4>Technologies we support</h4>
+            <div class="technologies">
+                <img src="assets/electronjs-ar21.svg" alt="electronjs" >
+                <img src="assets/ionicframework-ar21.svg" alt="ionic">
+                <img src="assets/reactjs-ar21.svg" alt="reactjs">
+                <img src="assets/vuejs-ar21.svg" alt="vuejs">
+                <img src="assets/expoio-ar21.svg" alt="expo">
+            </div>
+
+    </section>
+
+    <!-- PRICING -->
+     <section class="pricing-section">
+        <h2>Pricing</h2>
+        <div class="cards-container">
+            <div>
+                <h3>Free Plan </h3>
+                <p>Start Building Today, No Cost, No Commitment</p>
+                <p>What You Get:</p>
+                <ul>
+                    <li>Create up to 3 apps per month</li>
+                    <li>Access to basic AI modules</li>
+                    <li>Limited app storage and features</li>
+                    <li>Community support and resources</li>
+                    <li>Apps may include a Lightning AI watermark</li>
+                </ul>
+                <a href="#" class="cards-btn">Get Started</a>
+            </div>
+            <div id="pricing">
+                <span class="popular">Poppular</span>
+                <h3>Starter Plan <span class="price">$19/month</span></h3>
+                <p>For Growing Creators and Developers</p>
+                <p>What You Get:</p>
+                <ul>
+                    <li>Create up to 10 apps per month</li>
+                    <li>Access to advanced AI modules</li>
+                    <li>Increased storage and export options</li>
+                    <li>No Lightning AI watermark on apps</li>
+                    <li>Email support</li>
+                </ul>
+                <a href="#" class="cards-btn">Get Started</a>
+            </div>
+            <div class="span2">
+                <h3>Pro Plan <span class="price">$49/month</span></h3>
+                <p>For Professionals and Power Users</p>
+                <p>What You Get:</p>
+                <ul>
+                    <li>Unlimited app creation</li>
+                    <li>Full access to all AI modules</li>
+                    <li>Priority support and faster response times</li>
+                    <li>Maximum storage and export capabilities</li>
+                    <li> Early access to new features and updates</li>
+                </ul>
+                <a href="#" class="cards-btn">Get Started</a>
+            </div>
+        </div>
+     </section>
+
+     <footer>
+        <a href="#main"><i class="fa-solid fa-feather" ></i></a>
+        <p>Lightning AI 2025 &middot All Rights Reserved</p>
+        <a href="" class="web-link">By Abdelhadi</a>
+     </footer>
+    
+
+    <script src="app.js" ></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    color: #e9e9e9;
+    background: #0c0b0b;
+    font-family: "Poppins", Arial, sans-serif;
+    height: 100vh;
+}
+p, a {
+    color: #b1b1b1;
+    font-size: 0.94rem;
+    text-decoration: none;
+}
+section h2 {text-align: center;}
+main, section {
+    padding: 20px;
+    display: flex;
+    height: 100%;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+header i, footer i {
+    font-size: 1.7rem;
+    color: #000090;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header nav a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: opacity 0.5s;
+}
+.bars, .x-mark {
+    display: block;
+    color: #b1b1b1;
+}
+header nav a:hover {opacity: 0.7}
+
+.sideBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background:#191000;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    display: none;
+    animation: none;
+}
+@keyframes sidebar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes close {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.sideBar nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: end;
+    margin-top: 60px;
+}
+.sideBar nav a {
+    color: #b1b1b1;
+}
+.sideBar nav .x-mark {
+    position: absolute;
+    top: -30px;
+}
+
+.get-started {
+    padding: 5px 10px;
+    background-color: #001e00;
+    border-radius: 50px;
+    margin-top: 10px;
+    width: fit-content;
+    font-weight: 600;
+    border: 2px solid #007900;
+}
+
+/* MAIN */
+main {
+    overflow: hidden;
+}
+section {flex-direction: column;}
+main .side {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .side h1 {
+    font-size: 2.5rem;
+    width: 520px;
+}
+main .side h1 span {
+    padding: 5px;
+    border-radius: 5px;
+}
+main .side h1 .think {
+    background-color: #001e00;
+    color: #007900;
+}
+main .side h1 .make {
+    background-color: #330000;
+    color: #b30000;
+}
+
+/* GRIDS */
+.grids-section {
+    background-image: repeating-linear-gradient(
+        to right, transparent 0 30px,
+        #020c08 30px 31px
+    ), repeating-linear-gradient(
+        to bottom, transparent 0 30px,
+        #020c08 30px 31px
+    ),
+    radial-gradient(#330000 20%, transparent);
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grids {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 300px);
+}
+.grids div {
+    background: linear-gradient(-40deg, #000 70px, #000030 );
+    border-radius: 10px;
+    border: 2px solid #0000a0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+}
+.grids .big {
+    grid-row: span 2;
+    border-color: #ffa500;
+    background: #191000 ;
+}
+.grids .tall {
+    grid-column: span 2;
+    border-color: #ff0000;
+    background: linear-gradient(-40deg, #000 20%, #4c0000 );
+}
+.grids .green {
+    border-color: #117755;
+    background: linear-gradient(-40deg, #000 50%, #052419 );
+}
+
+/* why-lightning-ai */
+.why-lightning-ai {
+    background: #272626;
+    height: fit-content;
+}
+.why-lightning-ai h2 {margin-bottom: 10px}
+.why-lightning-ai h4 {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.why-lightning-ai .technologies {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* PRICING */
+.pricing-section {
+    background: #0e5f44;
+    height: fit-content;
+}
+.pricing-section .cards-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    gap: 17px;
+    justify-content: center;
+}
+.pricing-section .cards-container div {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #080808;
+    padding: 10px;
+    background: #0f6b4d;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cards-container div .cards-btn {
+    background: #298566;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 100px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.cards-container div h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cards-container div p {
+    color: #d4d4d4;
+    line-height: 25px;
+}
+.cards-container div ul {
+    padding: 20px;
+}
+.cards-container div h3 span {
+    color: #b1b1b1;
+    background: #0a4631;
+    font-weight: 400;
+    font-size: 0.7rem;
+    padding: 3px 7px;
+    border-radius: 50px;
+}
+.cards-container .popular {
+    font-size: 0.7rem;
+    position: absolute;
+    right: -130px;
+    transform: rotate(40deg);
+    background: #b30000;
+    width: 100%;
+    text-align: center;
+}
+
+ /* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background: #1b1b1b;
+}
+.web-link {
+    font-size: 0.8rem;
+}
+.web-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .grids-section {
+        height: fit-content;
+    }
+    .grids {
+        grid-template-columns: repeat(2, 300px);
+    }
+    .grids .big {
+        grid-column: span 2;
+    }
+    .grids .tall {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 900px) {
+    .pricing-section .cards-container {
+        grid-template-columns: repeat(2, 270px);
+    }
+    .pricing-section .span2 {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 650px) {
+    .grids {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grids div {
+        grid-column: span 2;
+    }
+    .why-lightning-ai .technologies{
+        flex-wrap: wrap;
+    }
+    .pricing-section .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pricing-section .cards-container div {
+        grid-column: span 2;
+    }
+    main .side h1 {
+        font-size: 1.7rem;
+        width: auto;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    header nav a {
+        display: none;
+    }
+    .sideBar nav a {
+        display: block;
+    }
+}
