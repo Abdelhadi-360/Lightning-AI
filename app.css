@@ -45,8 +45,8 @@ header nav a {
     font-weight: 500;
     transition: opacity 0.5s;
 }
-.bars, .x-mark {
-    display: block;
+.bars {
+    display: none;
     color: #b1b1b1;
 }
 header nav a:hover {opacity: 0.7}
@@ -328,6 +328,9 @@ footer {
         display: none;
     }
     .sideBar nav a {
+        display: block;
+    }
+    .bars{
         display: block;
     }
 }
